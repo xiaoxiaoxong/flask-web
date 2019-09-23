@@ -1,0 +1,9 @@
+body{
+    background: #f3f3f3;
+}
+.main{
+    background: #ffff;
+    width: 730px;
+    margin: 0 auto;
+    overflow: hidden;
+}

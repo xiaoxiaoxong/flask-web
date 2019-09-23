@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+    个人中心
+{% endblock %}
+
+{% block main %}
+
+        {% for e in edit %}
+            {{ e.title }}
+        {% endfor %}
+
+
+{% endblock %}

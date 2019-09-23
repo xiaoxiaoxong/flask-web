@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ content.title }}
+{% endblock %}
+
+{% block main %}
+    <div class="markdown">
+        <h3>{{ content.title }}</h3>
+        <span>{{ content.user }}</span>
+        <span>{{ content.datetime }}</span>
+    <div class="markdown-group">
+        {{ content.text|safe }}
+    </div>
+    </div>
+
+{% endblock %}

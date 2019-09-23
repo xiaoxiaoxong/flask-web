@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+    提交问答
+{% endblock %}
+{% block head %}
+
+{% endblock %}
+{% block main %}
+    <form action="">
+     <div class="form-ct">
+            {{ form.csrf_token }}
+            <div class="form-group">
+               {{ form.title(placeholder='输入标题') }}
+            </div>
+            <div class="form-group">
+               {{ form.content(placeholder='输入内容') }}
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">提交</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
